@@ -26,4 +26,14 @@ public class Mower {
 	        this.direction = direction;
 	    }
 
+		public static Mower initMower(Area area, String string) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public void move(char step) {
+			// TODO Auto-generated method stub
+			
+		}
+
 }
