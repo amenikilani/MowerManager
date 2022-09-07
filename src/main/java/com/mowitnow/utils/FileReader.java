@@ -1,7 +1,8 @@
 package com.mowitnow.utils;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class FileReader {
@@ -12,7 +13,7 @@ public class FileReader {
      * @param name file name
      */
     public static List<String> parseFile(String name) throws IOException {
-        return new ArrayList<String>();
+        return Files.readAllLines(Paths.get(name));
     }
 
 }

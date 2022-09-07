@@ -1,5 +1,6 @@
 package com.mowitnow.actions;
 
+
 public class Area {
     private  int width;
     private  int height;
@@ -25,13 +26,16 @@ public class Area {
 		this.height = height;
 	}
 
-	public static Area initArea(String[] split) {
-		// TODO Auto-generated method stub
-		return null;
+	public static Area initArea(String[] area) {
+	       int width = Integer.parseInt(area[0]);
+	       int height = Integer.parseInt(area[1]);
+	       return new Area(width, height);
 	}
 
 	public boolean canMove(Position position) {
-		// TODO Auto-generated method stub
-		return false;
+		 return position.getX() >= 0 && position.getX() <= width
+	                && position.getY() >= 0  && position.getY() <= height;
 	}
+	                
+	               
 }

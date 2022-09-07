@@ -16,7 +16,7 @@ public class MowerMainTest {
     public void main() throws IOException {
         MowerMain mowerMain = new MowerMain(FILE_NAME);
 
-        assertEquals("1 3 N", mowerMain.main().get(0));
-        assertEquals("5 1 E", mowerMain.main().get(1));
+        assertEquals("1 3 N", mowerMain.run().get(0));
+        assertEquals("5 1 E", mowerMain.run().get(1));
     }
 }

@@ -18,7 +18,7 @@ public class MowerMain {
      * The main function to run the mower.
      *
      */
-	 public List<String> main() {
+	 public List<String> run() {
 		 List<String> result = new ArrayList<String>();
 	        Area area = Area.initArea(file.get(0).split(" "));
 

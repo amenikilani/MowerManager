@@ -1,5 +1,6 @@
 package com.mowitnow.actions;
 
+
 public class Position {
 	
     public Position(int x, int y) {
@@ -22,4 +23,8 @@ public class Position {
 		this.y = y;
 	}
 
+    @Override
+    public String toString() {
+        return "" + x + " " + y ;
+    }
 }
